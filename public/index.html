@@ -4,28 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title> Home Page</title>
+    <link rel="stylesheet" href="/css/styles.min.css">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
 </head>
 <body>
+    
+    <div class="centered-form">
 
 
-    <h1>
-        Hello Lads
+        <div class="centered-form__box">
+
+            <h1>Join</h1>
+            <form action="/chat.html">
+                <label >Display Name</label>
+                <input type="text" name="username" placeholder="Display name" required>
+                <label >Room</label>
+                <input type="text" placeholder="Room" name="room" required>
+    
+                <button>Join</button>
+            </form>
+        </div>
         
-    </h1>
+    </div>
 
-    <form>
-
-        <input type="text" placeholder="Enter your message...">
-        <button type="submit">Submit</button>
-    </form>
-
-
-    <script src="/socket.io/socket.io.js"></script>
-        <script src="./js/chat.js">
-            
-        </script>
+    
 </body>
-
 </html>
